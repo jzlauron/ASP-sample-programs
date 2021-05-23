@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/Header.ascx" TagPrefix="WUC" TagName="Header" %>
+<%@ Register Src="~/Footer.ascx" TagPrefix="WUC" TagName="Footer" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ADO</title>
+    
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="_phHead" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <WUC:Header runat="server" ID="Header" />
+    
+    <div>
+        <asp:ContentPlaceHolder id="_phBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+        <WUC:Footer runat="server" ID="Footer" />
+        <div class="center"><a href ="Default.aspx" >Home</a></div>
+    </form>
+</body>
+</html>

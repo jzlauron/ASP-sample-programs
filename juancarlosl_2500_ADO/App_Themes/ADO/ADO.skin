@@ -1,0 +1,28 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:DropDownList runat="server" Font-Bold="true" />
+<asp:Table runat="server" GridLines="Both" />
+<asp:TableHeaderRow Width="200" ForeColor="White" BackColor="Blue" Font-Size="Larger" Font-Bold="true" runat="server" VerticalAlign="Middle"></asp:TableHeaderRow>
+
+<asp:DetailsView  SkinID="_myDetailsView" runat="server" AllowPaging="True" AutoGenerateRows="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px"  CellPadding="3" ForeColor="Black" GridLines="Vertical" Height="50px" Width="25%" CaptionAlign="Top" >
+        <AlternatingRowStyle BackColor="#CCCCCC" />
+        <EditRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="Black" Font-Bold="False" ForeColor="White" />
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+    </asp:DetailsView>
+
